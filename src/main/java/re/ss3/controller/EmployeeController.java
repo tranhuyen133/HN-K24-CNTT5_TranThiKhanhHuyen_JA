@@ -15,9 +15,9 @@ public class EmployeeController {
     public String getAllEmployees(Model model) {
         List<Employee> employees = new ArrayList<>();
 
-        employees.add(new Employee(1, "Nguyen Van A", "Phong Dao tao", 12000));
-        employees.add(new Employee(2, "Tran Thi B", "Phong Dao tao", 8500));
-        employees.add(new Employee(3, "Le Van C", "Phong Dao tao", 15000));
+        employees.add(new Employee(1, "Nguyen Van Hieu", "Phong Dao tao", 12000));
+        employees.add(new Employee(2, "Tran Thi Khanh Huyen", "Phong Dao tao", 8500));
+        employees.add(new Employee(3, "Nguyen Tung Duong", "Phong Dao tao", 15000));
 
         model.addAttribute("employees", employees);
 
