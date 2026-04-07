@@ -2,6 +2,7 @@ package re.ss3.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import re.ss3.model.Employee;
 
@@ -9,9 +10,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-@RequestMapping("/employees")
+//@RequestMapping("/employees")
 public class EmployeeController {
 
+    @GetMapping("/employees")
     public String getAllEmployees(Model model) {
         List<Employee> employees = new ArrayList<>();
 
